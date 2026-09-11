@@ -4,8 +4,13 @@ document.getElementById('convertBtn').addEventListener('click', convertToCentime
 function convertToCentimeters() {
     // TODO:
     // 1. Get the feet and inches values from the input fields
+    let feet = parseInt(document.getElementById('feet').value);
+    let inches = parseInt(document.getElementById('inches').value);
     // 2. Convert to centimeters using:
     //    - First convert feet to inches (1 foot = 12 inches)
+    inches = inches + (feet*12);
     //    - Then convert total inches to centimeters (1 inch = 2.54 cm)
+    const centimeters = inches * 2.54;
     // 3. Display the result in the centimeters span element
+    document.getElementById('centimeters').textContent = `${centimeters}`
 }
