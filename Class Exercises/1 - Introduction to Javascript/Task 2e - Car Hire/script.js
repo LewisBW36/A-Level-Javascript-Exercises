@@ -4,8 +4,16 @@ document.getElementById('calculateBtn').addEventListener('click', calculateHireC
 function calculateHireCharge() {
     // TODO:
     // 1. Get the miles travelled from the input field
+    let miles;
+    miles = parseFloat(document.getElementById('miles').value)
     // 2. Calculate:
     //    - Mileage charge (5p per mile = £0.05 per mile)
+    let charge = miles * 0.05
     //    - Total charge (£25.00 + mileage charge)
+    let totalCharge = 25 + charge
     // 3. Display both charges formatted to 2 decimal places
+    document.getElementById('mileageCharge').textContent = charge.toFixed(2);
+    document.getElementById('totalCharge').textContent = totalCharge.toFixed(2);
 }
+
+

@@ -49,11 +49,12 @@ function calculateTotal() {
     subtotal = (adultCost*adultTickets) + (childCost*childTickets) + (seniorCost*seniorTickets);
     let priceBreakdown = subtotal;
     let discounts = "";
+    let finalTotal;
     // TODO: Check for and apply special discounts
     // Family ticket (2 adults + 2 children): 10% off
     if (adultTickets == 2 && childTickets == 2) {
         priceBreakdown*=0.9;
-        discounts+="Family Ticket";
+        discounts+="Family Ticket ";
     } else {
         priceBreakdown;
     }
@@ -64,6 +65,7 @@ function calculateTotal() {
     } else {
         priceBreakdown;
     }
-    const finalTotal = priceBreakdown;
+    finalTotal = priceBreakdown;
     // TODO: Display price breakdown, subtotal, any discounts, and final total
-} document.getElementById('priceBreakdown','finalTotal','discounts','subtotal').textContent = 
+document.getElementById('priceBreakdown','finalTotal','discount','subtotal').textContent = `The subtotal was £${subtotal}, but after applying ${discounts}, it is now £${finalTotal}`
+}
