@@ -14,12 +14,18 @@ function calculateGrade() {
     let practical;
     theory = parseInt(document.getElementById('theory').value);
     practical = parseInt(document.getElementById('practical').value);
+    let average = (theory + practical) / 2
     // TODO: Check if both scores are above 50% (Pass requirement)
     if (theory > 50 && practical > 50) {
     // TODO: If passed, calculate average and check if above 70% (Distinction requirement)
     if ( theory > 70 && practical > 70) {
-        mark = "distinction"
-    }}
+        mark = "got a distinction";
+        } else {
+            mark = "passed";
+        } }
+    else { mark = "failed"; }
+    
     // TODO: Display the appropriate grade (Pass, Distinction, or Fail)
     // Also display the average score
+    document.getElementById('result').textContent = `Average score was ${average}%, and you ${mark}`
 }

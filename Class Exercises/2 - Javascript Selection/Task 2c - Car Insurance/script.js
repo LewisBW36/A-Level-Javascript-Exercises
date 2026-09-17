@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to calculate the insurance premium
 function calculatePremium() {
     // TODO: Get values from input fields
-    
+    let age = parseInt(document.getElementById('age).value);'
     // TODO: Calculate base premium (£500)
     
     // TODO: Apply age adjustment
