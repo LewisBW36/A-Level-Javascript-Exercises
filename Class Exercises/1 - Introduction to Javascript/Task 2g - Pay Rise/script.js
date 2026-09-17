@@ -4,6 +4,7 @@ document.getElementById('calculateBtn').addEventListener('click', calculatePayRi
 function calculatePayRise() {
     // TODO:
     // 1. Get the current salary, months back dated, and pay rise percentage
+    
     // 2. Calculate:
     //    - New annual salary (current salary + percentage increase)
     //    - Back pay (difference in monthly salary × number of months)
