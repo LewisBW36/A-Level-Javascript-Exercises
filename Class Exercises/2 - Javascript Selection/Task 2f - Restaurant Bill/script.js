@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to calculate the restaurant bill
 function calculateBill() {
     // TODO: Get all input values
-    
+    let foodsTotal = parseFloat(document.getElementById('foodsTotal').value)
+    let drinksTotal = parseFloat(document.getElementById('drinksTotal')).value)
     // TODO: Calculate service charge based on group size
     // 1-4: No mandatory charge
     // 5-8: 10%
