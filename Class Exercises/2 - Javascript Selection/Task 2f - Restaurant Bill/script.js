@@ -11,7 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function calculateBill() {
     // TODO: Get all input values
     let foodsTotal = parseFloat(document.getElementById('foodsTotal').value)
-    let drinksTotal = parseFloat(document.getElementById('drinksTotal')).value)
+    let drinksTotal = parseFloat(document.getElementById('drinksTotal').value)
+    let diners = parseInt(document.getElementById('diners').value)
+    let kidsCount = parseFloat(document.getElementById('kidsCount').value)
+    let day = document.getElementById('day').value
+    let time = document.getElementById('time').value
+    let loyaltyCard = document.getElementById('loyaltyCard').value
     // TODO: Calculate service charge based on group size
     // 1-4: No mandatory charge
     // 5-8: 10%
