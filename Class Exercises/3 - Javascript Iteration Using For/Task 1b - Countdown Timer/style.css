@@ -5,10 +5,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 0.9;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #490668;
 }
 
 .container {

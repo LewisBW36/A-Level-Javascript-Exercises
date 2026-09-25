@@ -16,8 +16,13 @@ function generateSequence() {
     }
 
     // Check if step is positive
+    else if (step < 1) {
+        output.innerHTML = "Check step is positive"
+    }
     // Check if end is greater than start
-    
+    else if (end < start) {
+        output.innerHTML = "Check end being higher than start"
+    }
     // TODO: Create array to store sequence
     let sequence = [];
     
@@ -26,12 +31,12 @@ function generateSequence() {
     for (i = start; i <= end; i += step) {
         sequence.push(i + "=>");
     }
-
-    output.innerHTML = sequence;
+  output.innerHTML = sequence;
+  
     
     // TODO: Display the sequence
     // Join the numbers with arrows between them
-}
+}   output.innerHTML = sequence;
 
 // Initialize the page
 window.onload = function() {

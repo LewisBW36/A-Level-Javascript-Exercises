@@ -11,23 +11,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add click event listener to the button
-    generateButton.addEventListener('click', generateSequence);
+    generateButton.addEventListener('click', generateSequence); 
 });
 
 // Function to generate number sequence
 function generateSequence() {
     // TODO: Get the maximum number and sequence type from inputs
-    
+    let maxNumber = parseInt(document.getElementById('maxNumber').value);
     // TODO: Initialize array to store sequence
-    
+    const sequence = []
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
+    if (sequenceType == 'countUp') {
+    for ( let i = 0; i <= maxNumber; i += step) {
+        sequence.push( i )
+    } 
+    document.getElementById('sequenceDisplay').textContent = `${sequence}` }
     // countDown: Use a for loop counting from N down to 1
     // steps: Use a for loop with custom step value
     // even: Use a for loop with if statement to check even numbers
     // odd: Use a for loop with if statement to check odd numbers
     
     // TODO: Calculate sum of sequence
-    
+    let sum = 
     // TODO: Display sequence, count of numbers, and sum
 }
